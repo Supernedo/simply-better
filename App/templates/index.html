@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}Flask MVC App{% endblock %}
+{% block page %}home{% endblock %}
+
+{{ super() }}
+
+{% block link %}
+<ul id="nav-mobile" class="right">
+<li><a href="login.html">Logout</a></li>
+</ul>
+{% endblock %}
+
+{% block content %}
+    <h1>Workout warriors</h1>
+    <p>Access a vast library of workouts equipped with tutorials and alternative execises for each body part, and create routines based on your needs!</p>
+{% endblock %}
